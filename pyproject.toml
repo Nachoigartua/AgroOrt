@@ -1,0 +1,17 @@
+[project]
+name = "agroort"
+version = "0.1.0"
+description = "AgroOrt ML recommendation system"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "httpx"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
